@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$/20250515/04_SQL고급_조인(기본).sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/20250515/04_SQL고급_조인(심화).sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/20250519/05_테이블.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250519/05_테이블_뷰_기본.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250519/05_테이블_뷰_심화.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250520/06_인덱스.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
