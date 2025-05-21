@@ -1,0 +1,4 @@
+CREATE DATABASE jdbc_ex;
+
+GRANT ALL PRIVILEGES ON jdbc_ex.* TO 'scoula'@'%';
+FLUSH PRIVILEGES;

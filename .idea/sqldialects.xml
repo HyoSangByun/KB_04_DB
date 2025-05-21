@@ -7,6 +7,9 @@
     <file url="file://$PROJECT_DIR$/20250519/05_테이블_뷰_기본.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/20250519/05_테이블_뷰_심화.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/20250520/06_인덱스.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250520/06_인덱스_기본.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250520/06_인덱스_심화.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/20250521/07_JDBC_수업.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
