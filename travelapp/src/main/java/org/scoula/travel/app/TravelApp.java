@@ -13,6 +13,11 @@ public class TravelApp {
     MenuItem[] menu;
     Scanner sc = new Scanner(System.in);
 
+    public static void main(String[] args) {
+        TravelApp app = new TravelApp();
+        app.run();
+    }
+
     public TravelApp() {
         TravelDao dao = new TravelDaoImpl();
         service = new TravelServiceImpl(dao);
@@ -56,10 +61,5 @@ public class TravelApp {
             Runnable command = menu[ix].getCommand();
             command.run();
         }
-    }
-
-    public static void main(String[] args) {
-        TravelApp app = new TravelApp();
-        app.run();
     }
 }

@@ -82,6 +82,7 @@ public class TravelDaoImpl implements TravelDao {
 
     /**
      * 여행지 이미지 정보 DB INSERT메서드
+     *
      * @param image : 등록할 이미지 정보를 담은 TravelImageVO 객체
      */
     @Override
@@ -105,11 +106,11 @@ public class TravelDaoImpl implements TravelDao {
     /**
      * 전체 여행지 개수를 조회하는 메서드
      * - 페이징 처리를 위한 총 개수 정보 제공
+     *
      * @return 전체 여행지 개수
      */
     @Override
     public int getTotalCount() {
-
         String sql = "SELECT count(*) FROM tbl_travel";
 
         // try-with-resources, 여러 객체 등록 가능
@@ -240,16 +241,16 @@ public class TravelDaoImpl implements TravelDao {
         TravelVO travel = null;
 
         String sql = """
-                SELECT 
-                    t.*, ti.no AS tino, 
-                    ti.filename, 
-                    ti.travel_no
-                FROM 
-                    tbl_travel t
-                 LEFT OUTER JOIN 
-                    tbl_travel_image ti ON t.no = ti.travel_no
-                WHERE t.no = ?
-            """;
+                    SELECT 
+                        t.*, ti.no AS tino, 
+                        ti.filename, 
+                        ti.travel_no
+                    FROM 
+                        tbl_travel t
+                     LEFT OUTER JOIN 
+                        tbl_travel_image ti ON t.no = ti.travel_no
+                    WHERE t.no = ?
+                """;
 
         try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
 

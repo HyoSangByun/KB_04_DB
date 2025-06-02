@@ -11,14 +11,12 @@ public class ImportImageData {
     public static void main(String[] args) {
         TravelDao dao = new TravelDaoImpl();
 
-//         File dir = new File("C:/KB_FULLSTACK/05_DB/practice/travelapp/travel-image");
-         File dir = new File("../travel-image");
+        File dir = new File("../travel-image");
         File[] files = dir.listFiles();
         for (File file : files) {
             String filename = file.getName();
             long travelNo = Long.parseLong(filename.split("-")[0]); // 관광지 no 얻기
             TravelImageVO image = TravelImageVO.builder()
-
                     .filename(filename)
                     .travelNo(travelNo)
                     .build();
